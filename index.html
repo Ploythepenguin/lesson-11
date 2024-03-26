@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/banner.jpeg">
+            <div class="overlay"></div>
+            <div class="banner-content">
+                <h1>Playlist</h1>
+                <p>
+                    Browse our library of songs and play them directly in the app.
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="search-box">
+                <input id="search-input" class="search-input" type="text" placeholder="Search a song...">
+            </div>
+            <div class="playlist">
+                
+            </div>
+        </main>
+    </div>
+    <footer id="player">
+        <div class="song-details"></div>
+        <div class="player-controls">
+            <button id="previous-btn">
+                <div class="previous-btn">
+                    <img src="./images/previous-button.png" alt="PreviousButton">
+                 </div>
+            </button>
+            <button class="player-play-btn" data-playing="false">
+                <div class="player-icon-play">
+                    <img src="./images/play-button.png" alt="PlayButton">
+                </div>
+                <div class="player-icon-pause hidden">
+                    <img src="./images/pause-button.png" alt="Pause Button">
+                </div>
+            </button>
+            <button id="forward-btn">
+                <div class="forward-btn">
+                    <img src="./images/forward-button.png" alt="ForwardButton">
+                </div>
+            </button>
+            <div class="player-timeline">
+                <span class="player-time player-time-current">00:00</span>
+                <div class="player-progress">
+                    <div class="player-progress-filled"></div>
+                </div>
+                <span class="player-time player-time-duration">00:00</span>
+            </div>
+        </div>
+       <audio src="">
+       </audio>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
